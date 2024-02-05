@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <p id="home-message"></p>
+
+        <form name="myForm" onsubmit="calc()">
+
+        <div class="row">
+
+            <div class="col-25">
+                <label for="sname">Student name: </label>
+            </div>
+
+            <div class="col-75">
+                <input type="text" id="sname" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+            <label>Stundent number: </label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="snum" required>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="currentYear">Select your current year: </label> 
+                </div>
+
+            <div class="col-75">
+                <select id="currentYear" onchange="currentYear">
+                <option value="null">--Select year--</option>
+                <option value="first">1st Year</option>
+                <option value="second">2nd Year</option>
+                <option value="third">3rd Year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="studCourse">Select Your Course: </label> 
+                </div>
+
+            <div class="col-75">
+                <select id="studCourse" onchange="studCourse">
+                    <option value="null">---Select course--</option>
+                    <option value="IT">IT</option>
+                    <option value="Eng">Engineering</option>
+                    <option value="Acc">Accounting</option>
+                    <option value="man">Management</option>
+                </select>
+            </div>
+
+        </div>
+            
+            <div class="row">
+                <div >
+                <button class="button" type="button" onclick="calc()" required>Calculate</button>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div >
+                <button class="button" type="button" onclick="reset()">Reset</button>
+                </div>
+            </div>
+
+        </form>
+        
+    </div>
+
+    <script src="app.js"></script>
+</html>
